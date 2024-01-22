@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "toyive5002@vasteron.com",
-    "password": "ra00fi00",
+    "email": "dodac27818@tsderp.com",
+    "password": "ab12cd34",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -20,14 +20,14 @@
     "100077513002567",
     "",
     "",
-    "100066082432652"
+    ""
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "Veronica ♥️ ",
+  "nickNameBot": "Junpi 🐱🧡",
   "prefix": "/",
   "database": {
     "type": "sqlite",
