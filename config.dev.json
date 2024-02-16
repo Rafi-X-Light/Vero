@@ -1,12 +1,12 @@
 {
   "facebookAccount": {
-    "email": "toyive5002@vasteron.com",
-    "password": "ab12cd34",
+    "email": "",
+    "password": "",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
     "userAgent": "Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36",
-    "intervalGetNewCookie": 1440,
+    "intervalGetNewCookie": 4320,
     "notes": "time the system automatically retrieves new cookies from email/password, unit is minute, if you set null, the system will not automatically retrieve new cookies, it saves you from having to manually change your cookie every time it expires. recommended set to 1440 (1day) or 4320 (3day).TO BE ABLE TO USE THIS FEATURE YOU NEED TO ENTER THE ACCOUNT PASSWORD ABOVE"
   },
   "antiInbox": false,
@@ -17,9 +17,7 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100077513002567",
-    "",
-    "",
+    "100086565691009",
     ""
   ],
   "whiteListMode": {
@@ -27,7 +25,11 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
+  "OWNER": "Light_X_Rafi",
+  "AGE": "15",
+  "GENDER": "MALE",
   "nickNameBot": "Veronica ♥️",
+  "FACEBOOK": "https://www.facebook.com/100086565691009",
   "prefix": "/",
   "database": {
     "type": "sqlite",
@@ -39,15 +41,15 @@
   "timeZone": "Asia/Dhaka",
   "credentials": {
     "gmailAccount": {
-      "email": "andylabaco@gmail.com",
-      "clientId": "96871167660-5js0qjdlpr2mcd331kv5obpifev5j69r.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "refreshToken": "1//04qK_zxJkdK7RCgYIARAAGAQSNwF-L9IrZOdI4prCgpqvAoDEvn-HpuSugKxBTRNoGS37QwxfAWJUCehSKhdas26xOh-SjmdR4uw",
+      "email": "cliffbotbeluga@gmail.com",
+      "clientId": "335951889803-q0sqvpqjire12vl0c1drqpvq6trqe7qi.apps.googleusercontent.com",
+      "clientSecret": "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",
+      "refreshToken": "1//04vKSsirtbMjRCgYIARAAGAQSNwF-L9Ir45Y2gJy6rg7wvfCbzF5fTFQxOhV83N6jQC-N5n6S-rNnEUgujiuWu4OvrLEbmELMcSI",
       "apiKey": ""
     },
     "gRecaptcha": {
-      "siteKey": "6LfDe7QmAAAAAMdncmzO8RDLROsn_U-VPkuV_LzZ",
-      "secretKey": "6LfDe7QmAAAAAOyLAlcnK-YxCVWwzdjow-h5pNJg"
+      "siteKey": "6LcEPTMpAAAAAKRhQmTp03g4rkq-U6jXs8E8rDf5",
+      "secretKey": "6LcEPTMpAAAAAKRhQmTp03g4rkq-U6jXs8E8rDf5"
     }
   },
   "dashBoard": {
@@ -65,13 +67,13 @@
     }
   },
   "autoRestart": {
-    "time": null,
+    "time": 3600000,
     "notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
   },
   "autoUptime": {
-    "enable": false,
-    "timeInterval": 180,
-    "url": "",
+    "enable": true,
+    "timeInterval": 500,
+    "url": "https://uptime.botrandom30.repl.co",
     "notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
   },
   "autoLoadScripts": {
@@ -84,10 +86,10 @@
   "autoReloginWhenChangeAccount": false,
   "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
-    "enable": true,
-    "timeRestart": 3600000,
-    "delayAfterStopListening": 2000,
-    "logNoti": true,
+    "disable": false,
+    "timeRestart": 0,
+    "delayAfterStopListening": 0,
+    "logNoti": false,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
   },
   "notiWhenListenMqttError": {
@@ -110,13 +112,10 @@
     }
   },
   "hideNotiMessage": {
-    "commandNotFound": false,
+    "wrongCommand": false,
     "adminOnly": false,
     "threadBanned": false,
-    "userBanned": false,
-    "needRoleToUseCmd": false,
-    "needRoleToUseCmdOnReply": false,
-    "needRoleToUseCmdOnReaction": false
+    "userBanned": false
   },
   "logEvents": {
     "disableAll": false,
@@ -138,7 +137,13 @@
     "selfListen": false,
     "selfListenEvent": true,
     "autoMarkDelivery": false,
-    "autoReconnect": false,
+    "autoReconnect": true,
     "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
+  },
+  "whiteListModeThread": {
+    "enable": false,
+    "whiteListThreadIds": [],
+    "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
+    "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   }
 }
